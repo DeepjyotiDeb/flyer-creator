@@ -5,7 +5,7 @@
 export const TEMPLATES = [
   {
     id: "tech-conf",
-    name: "Tech Innovate 2026 Conference",
+    name: "EduReach Summit 2026 Conference",
     category: "Event / Tech",
     format: "a4",
     code: `<!DOCTYPE html>
@@ -452,8 +452,8 @@ export const TEMPLATES = [
 </html>`,
   },
   {
-    id: "coffee-shop",
-    name: "Artisan Coffee Grand Opening",
+    id: "fast-food-shop",
+    name: "Krishna Food Shop",
     category: "Food & Retail",
     format: "letter",
     code: `<!DOCTYPE html>
@@ -512,41 +512,41 @@ export const TEMPLATES = [
 <body>
   <div class="header">
     <span class="badge">Grand Opening Special</span>
-    <h1>Velvet Bean Roastery</h1>
-    <p class="tagline">Single-Origin Craft Coffee & Artisanal Pastries</p>
+    <h1>Krishna Food Shop</h1>
+    <p class="tagline">Authentic Indian Cuisine & Fresh Daily Meals</p>
   </div>
 
   <div class="menu-grid">
     <div class="menu-category">
-      <h3>Signature Brews</h3>
-      <div class="menu-item"><span class="item-name">Ethiopian Yirgacheffe Pour Over</span><span class="item-price">$5.50</span></div>
-      <div class="menu-item"><span class="item-name">Velvet Nitro Cold Brew</span><span class="item-price">$6.00</span></div>
-      <div class="menu-item"><span class="item-name">Cardamom Honey Latte</span><span class="item-price">$6.50</span></div>
+      <h3>Signature Dishes</h3>
+      <div class="menu-item"><span class="item-name">Butter Chicken with Naan</span><span class="item-price">₹320</span></div>
+      <div class="menu-item"><span class="item-name">Paneer Tikka Masala</span><span class="item-price">₹280</span></div>
+      <div class="menu-item"><span class="item-name">Hyderabadi Biryani</span><span class="item-price">₹350</span></div>
     </div>
     <div class="menu-category">
-      <h3>Fresh Bakery</h3>
-      <div class="menu-item"><span class="item-name">Almond Crusted Croissant</span><span class="item-price">$4.75</span></div>
-      <div class="menu-item"><span class="item-name">Wild Blueberry Scone</span><span class="item-price">$4.25</span></div>
-      <div class="menu-item"><span class="item-name">Cardamom Morning Bun</span><span class="item-price">$4.50</span></div>
+      <h3>Street Snacks</h3>
+      <div class="menu-item"><span class="item-name">Samosa (2 pc)</span><span class="item-price">₹60</span></div>
+      <div class="menu-item"><span class="item-name">Chaat Platter</span><span class="item-price">₹150</span></div>
+      <div class="menu-item"><span class="item-name">Masala Dosa</span><span class="item-price">₹180</span></div>
     </div>
   </div>
 
   <div class="promo-banner">
-    <h2>Opening Week Offer: Free Pastry with any Specialty Drink!</h2>
-    <p>Show this flyer or mention code <strong>'VELVET2026'</strong> at checkout. Valid through Sunday.</p>
+    <h2>Opening Week Offer: Free Gulab Jamun with any Meal!</h2>
+    <p>Show this flyer or mention code <strong>'KRISHNA2026'</strong> at checkout. Valid through Sunday.</p>
   </div>
 
   <div class="footer">
-    <strong>Open Daily 6:00 AM – 7:00 PM</strong>
-    742 Evergreen Terrace, Downtown • @velvetbeanroastery
+    <strong>Open Daily 10:00 AM – 10:00 PM</strong>
+    742 Evergreen Terrace, Downtown • @krishnafoodshop
   </div>
 </body>
 </html>`,
   },
   {
     id: "real-estate",
-    name: "Luxury Penthouse Listing",
-    category: "Real Estate",
+    name: "University 5th Annual Day",
+    category: "Education / Event",
     format: "square",
     code: `<!DOCTYPE html>
 <html lang="en">
@@ -587,6 +587,13 @@ export const TEMPLATES = [
     background: radial-gradient(circle at 70% 30%, #404040 0%, #1a1a1a 100%);
     z-index: 0;
   }
+  .abstract-art {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 0;
+    overflow: hidden;
+  }
+  .abstract-art svg { width: 100%; height: 100%; display: block; }
   .specs-overlay { position: relative; z-index: 1; width: 100%; display: flex; justify-content: space-between; align-items: flex-end; }
   .specs-list { display: flex; gap: 20px; font-size: 13px; color: #cccccc; margin-top: 10px; }
   .specs-list span strong { color: #ffffff; display: block; font-size: 16px; margin-top: 2px; }
@@ -617,20 +624,48 @@ export const TEMPLATES = [
 </head>
 <body>
   <div>
-    <div class="top-tag">Exclusive Listing • Downtown Skyline</div>
-    <h1>The Apex Sky Villa, Penthouse 42B</h1>
-    <div class="price">$3,850,000</div>
+    <div class="top-tag">Celebrating Five Years of Excellence</div>
+    <h1>University 5th Annual Day Celebrations</h1>
+    <div class="price">December 12, 2026</div>
   </div>
 
   <div class="photo-frame">
     <div class="photo-bg-sim"></div>
+    <div class="abstract-art">
+      <svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <!-- Soft glow orbs -->
+        <circle cx="150" cy="40" r="55" fill="#d4af37" opacity="0.18"/>
+        <circle cx="40" cy="150" r="70" fill="#0d9488" opacity="0.12"/>
+        <circle cx="170" cy="160" r="40" fill="#f59e0b" opacity="0.15"/>
+        <!-- Abstract concentric rings -->
+        <g fill="none" stroke="#d4af37" stroke-width="1.5" opacity="0.5">
+          <circle cx="100" cy="90" r="30"/>
+          <circle cx="100" cy="90" r="48"/>
+          <circle cx="100" cy="90" r="66"/>
+        </g>
+        <!-- Floating geometric shapes -->
+        <rect x="30" y="30" width="26" height="26" rx="4" fill="#d4af37" opacity="0.35" transform="rotate(15 43 43)"/>
+        <rect x="150" y="90" width="20" height="20" rx="4" fill="#0d9488" opacity="0.4" transform="rotate(-20 160 100)"/>
+        <polygon points="60,120 78,150 42,150" fill="#f59e0b" opacity="0.35"/>
+        <polygon points="140,30 152,50 128,50" fill="#d4af37" opacity="0.4"/>
+        <!-- Sparkle stars -->
+        <g fill="#ffffff" opacity="0.7">
+          <path d="M100 20 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2 z"/>
+          <path d="M30 80 l1.5 4.5 4.5 1.5 -4.5 1.5 -1.5 4.5 -1.5 -4.5 -4.5 -1.5 4.5 -1.5 z"/>
+          <path d="M175 70 l1.5 4.5 4.5 1.5 -4.5 1.5 -1.5 4.5 -1.5 -4.5 -4.5 -1.5 4.5 -1.5 z"/>
+        </g>
+        <!-- Curved accent lines -->
+        <path d="M0 170 Q 60 140 120 170 T 200 160" fill="none" stroke="#d4af37" stroke-width="2" opacity="0.4"/>
+        <path d="M0 185 Q 70 160 140 185 T 200 178" fill="none" stroke="#0d9488" stroke-width="1.5" opacity="0.35"/>
+      </svg>
+    </div>
     <div class="specs-overlay">
       <div>
-        <p style="font-size: 13px; color: #d4af37; letter-spacing: 2px; text-transform: uppercase;">Panoramic Glass Walls & Private Rooftop Pool</p>
+        <p style="font-size: 13px; color: #d4af37; letter-spacing: 2px; text-transform: uppercase;">An Evening of Culture, Awards &amp; Community</p>
         <div class="specs-list">
-          <span>Bedrooms<strong>3 Beds</strong></span>
-          <span>Bathrooms<strong>3.5 Baths</strong></span>
-          <span>Interior<strong>3,200 Sq.Ft.</strong></span>
+          <span>Venue<strong>Main Auditorium</strong></span>
+          <span>Time<strong>6:00 PM</strong></span>
+          <span>Entry<strong>Free</strong></span>
         </div>
       </div>
     </div>
@@ -638,10 +673,10 @@ export const TEMPLATES = [
 
   <div class="agent-box">
     <div>
-      <div class="agent-name">Victoria Sterling</div>
-      <div class="agent-agency">Elite Estates Global Luxury • Lic #98214</div>
+      <div class="agent-name">Office of Student Affairs</div>
+      <div class="agent-agency">Greenfield University • Annual Day Committee</div>
     </div>
-    <a href="#" class="contact-btn">Schedule Private Tour</a>
+    <a href="#" class="contact-btn">RSVP Now</a>
   </div>
 </body>
 </html>`,
