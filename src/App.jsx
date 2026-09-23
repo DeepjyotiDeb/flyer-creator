@@ -19,7 +19,8 @@ export default function App() {
   const [darkMode, setDarkMode] = useState(true);
   const [activeTab, setActiveTab] = useState("editor");
   const [promptCategory, setPromptCategory] = useState("event");
-  const [promptTopic, setPromptTopic] = useState("Web3 & Crypto Hackathon 2026");
+  const [promptTopic, setPromptTopic] = useState("Education and Teaching conference");
+  const [promptRequest, setPromptRequest] = useState("");
 
   const [codeCopied, triggerCodeCopied] = useTransientFlag();
   const [promptCopied, triggerPromptCopied] = useTransientFlag();
@@ -28,6 +29,7 @@ export default function App() {
     topic: promptTopic,
     category: promptCategory,
     format: selectedFormat,
+    request: promptRequest,
   });
 
   const handleTemplateSelect = (template) => {
@@ -84,6 +86,8 @@ export default function App() {
               onCategoryChange={setPromptCategory}
               topic={promptTopic}
               onTopicChange={setPromptTopic}
+              request={promptRequest}
+              onRequestChange={setPromptRequest}
               promptText={aiPromptText}
               onCopyPrompt={handleCopyPrompt}
               copied={promptCopied}

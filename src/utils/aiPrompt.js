@@ -3,13 +3,13 @@ import { FORMAT_DIMENSIONS } from "../constants/formats";
 /**
  * Builds the optimized AI prompt for generating flyer HTML.
  */
-export function buildAiPrompt({ topic, category, format }) {
+export function buildAiPrompt({ topic, category, format, request }) {
   const { name, width, height } = FORMAT_DIMENSIONS[format];
 
   return `
 Act as an expert graphic designer and elite HTML/CSS developer. Create a stunning, high-converting flyer for a "${topic}" (${category} category).
 Create a professional, single-page print flyer based on the following user request:
-"[INSERT USER REQUEST HERE]"
+"${request || "Design a clean, professional flyer that fits the topic and category above."}"
 
 ### STRICT DESIGN & TECHNICAL CONSTRAINTS:
 1. FORMAT: Output ONLY a single, self-contained HTML document enclosed within a (\`\`\`html ... \`\`\`) code block. Do NOT include any conversational preamble, explanations, or text outside the code block.

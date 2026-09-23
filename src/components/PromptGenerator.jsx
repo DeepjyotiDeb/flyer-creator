@@ -1,19 +1,13 @@
 import { Check, Copy, Sparkles } from "lucide-react";
 
-const PROMPT_CATEGORIES = [
-  { value: "event", label: "Tech Conference / Event" },
-  { value: "food", label: "Cafe / Restaurant Menu" },
-  { value: "realestate", label: "Real Estate Property Listing" },
-  { value: "fitness", label: "Gym / Fitness Bootcamp" },
-  { value: "corporate", label: "Corporate Business Services" },
-];
-
 export default function PromptGenerator({
   darkMode,
   category,
   onCategoryChange,
   topic,
   onTopicChange,
+  request,
+  onRequestChange,
   promptText,
   onCopyPrompt,
   copied,
@@ -34,6 +28,8 @@ export default function PromptGenerator({
         <CategorySelect darkMode={darkMode} value={category} onChange={onCategoryChange} />
 
         <TopicInput darkMode={darkMode} value={topic} onChange={onTopicChange} />
+
+        <RequestInput darkMode={darkMode} value={request} onChange={onRequestChange} />
 
         <div>
           <div className="flex items-center justify-between mb-1">
@@ -93,6 +89,25 @@ function TopicInput({ darkMode, value, onChange }) {
         onChange={(e) => onChange(e.target.value)}
         className={`w-full p-2.5 rounded-lg border text-xs font-medium ${darkMode ? "bg-slate-950 border-slate-800 text-slate-200" : "bg-white border-slate-300 text-slate-800"}`}
         placeholder="e.g. AI Hackathon 2026"
+      />
+    </div>
+  );
+}
+
+function RequestInput({ darkMode, value, onChange }) {
+  return (
+    <div>
+      <label
+        className={`block text-xs font-semibold mb-1 ${darkMode ? "text-slate-300" : "text-slate-700"}`}
+      >
+        Your Specific Request <span className="">(Optional)</span>
+      </label>
+      <textarea
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        rows={3}
+        className={`w-full p-2.5 rounded-lg border text-xs font-medium resize-none ${darkMode ? "bg-slate-950 border-slate-800 text-slate-200" : "bg-white border-slate-300 text-slate-800"}`}
+        placeholder="e.g. Include a schedule, 3 keynote speakers, and a registration QR code. Use a bold indigo & teal palette."
       />
     </div>
   );

@@ -2,7 +2,7 @@ export default function TemplateList({ templates, onSelect, darkMode }) {
   return (
     <div className="flex-1 p-4 overflow-y-auto space-y-3">
       <p className={`text-xs ${darkMode ? "text-slate-400" : "text-slate-600"} mb-3`}>
-        Choose a pre-styled professional template to load instantly into the editor:
+        Choose a pre-styled template to load instantly into the editor:
       </p>
       {templates.map((tmpl) => (
         <div

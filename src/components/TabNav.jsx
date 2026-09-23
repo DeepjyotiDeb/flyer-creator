@@ -16,7 +16,7 @@ export default function TabNav({ activeTab, onTabChange, templateCount }) {
           className={`flex items-center space-x-2 py-2.5 px-4 text-xs font-bold border-b-2 transition-all ${
             activeTab === id
               ? "border-blue-500 text-blue-400"
-              : "border-transparent text-slate-400 hover:text-slate-200"
+              : "border-transparent text-slate-500 hover:text-slate-600"
           }`}
         >
           <Icon className={`w-4 h-4 ${iconClassName ?? ""}`} />
